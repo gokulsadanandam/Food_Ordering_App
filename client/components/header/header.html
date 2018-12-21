@@ -1,0 +1,30 @@
+<div class="header-wrapper" ng-controller="header">
+	
+	<div class="header-logo">
+		<div class="header-options">
+		<!-- <i class="fa fa-cutlery" aria-hidden="true"></i> -->
+		<!-- <span>Welcome User</span> -->
+		</div>
+	</div>
+
+	<div class="header-items">
+		<div class="header-options">
+		<i class="fa fa-home" aria-hidden="true"></i>
+		<span>Home</span>
+		</div>
+		<div class="header-options">
+			<i class="fa fa-search" aria-hidden="true"></i>
+			<span>Search</span>
+		</div>
+		<div class="header-options" ng-if="user">
+		<i class="fa fa-sign-in" aria-hidden="true"></i>
+		<span>Logout</span>
+		</div>
+		<div class="header-options" ng-if="!user">
+		<i class="fa fa-sign-in" aria-hidden="true"></i>
+		<span>Login</span>		
+		</div>
+	</div>
+
+
+</div>

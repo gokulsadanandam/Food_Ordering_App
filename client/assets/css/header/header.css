@@ -1,0 +1,25 @@
+.header-wrapper{
+	height: 100%;
+	background-color: #222222;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.header-wrapper > .header-items,.header-logo{
+	height: 100%;
+	padding: 8px;
+	color: white
+}
+
+
+.header-wrapper > .header-items,.header-logo span{
+	font-size: 20px;
+}
+
+.header-options{
+	display: inline-block;
+	margin: 0px 5px
+}
