@@ -1,0 +1,34 @@
+<div class="search-wrapper">
+<div class="search-box">
+    <input type="search" ng-model="query" ng-change="search()" class="form-control" placeholder="Type a Food Item or Hotel name ">
+    <i class="fa fa-search"></i>
+</div>
+
+<div class="search-fail" ng-show="!searchdata.length&&query.length>3">
+<h2>Sorry, We Could not find your Search :(</h2>
+</div>
+
+<div class="search-header" ng-show="searchdata.length">
+	<h4>Restaurants</h4>
+	<select class="form-control" ng-model="option" ng-change="sort()">
+		<option>rating</option>
+		<option>alphabetically</option>
+	</select>
+</div>
+
+<div class="search-content" ng-repeat="results in searchdata">
+	<div class="search-content-image">
+		<img ng-src={{results.url}}>
+	</div>
+	<div class="search-content-data">
+		<h3>{{results.Name}}</h3>
+		<span>{{results.Cuisine}}</span>
+		<div>
+			<i class="fa fa-star" aria-hidden="true"></i>
+			{{results.Rating}}
+		</div>
+		<div>{{results.Address}}</div>
+	</div>
+
+</div>
+</div>
