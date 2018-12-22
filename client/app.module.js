@@ -11,14 +11,10 @@ angular.module('app', ['header', 'home', 'ngRoute'])
 
         this.userIsloggedIn = async function() {
 
-                await $http({
-                    method: 'GET',
-                    url: '/api/user'
-                }).then((response) => {
-                    if (response) {
-                        this.setUser(true)
-                    }
-                })
-            }
-            this.userIsloggedIn()
+            return await $http({
+                method: 'GET',
+                url: '/api/user'
+            })
+        }
+
     })
