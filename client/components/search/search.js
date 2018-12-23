@@ -27,9 +27,8 @@ angular.module('search', ['ngAnimate', 'ui.bootstrap'])
             }
         }
     })
-    .controller('search', function($scope, hoteldata, $filter , $uibModal) {
-
-        $scope.details = hoteldata.getHotelData()
+    .controller('search', function($scope, hoteldata, $filter , $uibModal , details) {
+        $scope.details = details.data
         $scope.query = new String()
         $scope.flag = false
         $scope.option = "rating"

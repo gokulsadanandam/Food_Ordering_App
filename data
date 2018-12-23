@@ -1,0 +1,222 @@
+[{
+    'Cuisine': 'Italian',
+    'Name': 'Adyar Ananda Bhavan',
+    'Rating': 1,
+    'url': '/assets/images/image6.jpg',
+    'items': {
+        'naan': 30,
+        'biriyani': 30,
+        'idly': 100,
+        'pizza': 45
+    },
+    'location': 'chennai',
+    'Address': '5, Mahatma Gandhi Road,Chennai'
+}, {
+    'Cuisine': 'Italian',
+    'Name': 'Annalakshmi',
+    'Rating': 4.7,
+    'url': '/assets/images/image2.jpg',
+    'items': {
+        'naan': 45,
+        'dosa': 100,
+        'chappati': 100,
+        'biriyani': 30
+    },
+    'location': 'chennai',
+    'Address': '5, Mahatma Gandhi Road,Chennai'
+}, {
+    'Cuisine': 'American',
+    'Name': 'The Grand Sweets and Snacks',
+    'Rating': 3,
+    'url': '/assets/images/image1.jpg',
+    'items': {
+        'burger': 90,
+        'naan': 100,
+        'dosa': 88,
+        'pizza': 45
+    },
+    'location': 'chennai',
+    'Address': '5, Mahatma Gandhi Road,Chennai'
+}, {
+    'Cuisine': 'Indian',
+    'Name': 'Murugan Idli Shop',
+    'Rating': 3,
+    'url': '/assets/images/image3.jpg',
+    'items': {
+        'chappati': 30,
+        'naan': 88,
+        'idly': 30,
+        'pizza': 45
+    },
+    'location': 'chennai',
+    'Address': '25,Yellow Road, Chennai'
+}, {
+    'Cuisine': 'Continental',
+    'Name': 'Namma Veedu Vasanta Bhavan',
+    'Rating': 4.7,
+    'url': '/assets/images/image3.jpg',
+    'items': {
+        'burger': 30,
+        'dosa': 100,
+        'idly': 90,
+        'pizza': 45
+    },
+    'location': 'chennai',
+    'Address': '5, Mahatma Gandhi Road,Chennai'
+}, {
+    'Cuisine': 'Indian',
+    'Name': 'New Woodlands Hotel',
+    'Rating': 4.7,
+    'url': '/assets/images/image4.jpg',
+    'items': {
+        'burger': 100,
+        'chappati': 45,
+        'biriyani': 90,
+        'idly': 25
+    },
+    'location': 'chennai',
+    'Address': '18, New Road,Chennai'
+}, {
+    'Cuisine': 'Italian',
+    'Name': 'Ratna Cafe',
+    'Rating': 3.2,
+    'url': '/assets/images/image2.jpg',
+    'items': {
+        'naan': 88,
+        'biriyani': 45,
+        'idly': 88,
+        'pizza': 45
+    },
+    'location': 'chennai',
+    'Address': '25,Yellow Road, Chennai'
+}, {
+    'Cuisine': 'Beverages',
+    'Name': 'Saravana Bhavan',
+    'Rating': 4.5,
+    'url': '/assets/images/image5.jpg',
+    'items': {
+        'burger': 45,
+        'chappati': 90,
+        'dosa': 25,
+        'biriyani': 45
+    },
+    'location': 'chennai',
+    'Address': '18, New Road,Chennai'
+}, {
+    'Cuisine': 'Italian',
+    'Name': 'Sri Krishna Sweets',
+    'Rating': 2,
+    'url': '/assets/images/image4.jpg',
+    'items': {
+        'chappati': 67,
+        'biriyani': 67,
+        'naan': 45,
+        'pizza': 45
+    },
+    'location': 'chennai',
+    'Address': '5, Mahatma Gandhi Road,Chennai'
+}, {
+    'Cuisine': 'Italian',
+    'Name': 'Bangalore Restaurant Week',
+    'Rating': 4,
+    'url': '/assets/images/image2.jpg',
+    'items': {
+        'chappati': 45,
+        'dosa': 100,
+        'biriyani': 67,
+        'pizza': 30
+    },
+    'location': 'chennai',
+    'Address': '5, Mahatma Gandhi Road,Chennai'
+}, {
+    'Cuisine': 'Continental',
+    'Name': 'Central Tiffin Room Bangalore',
+    'Rating': 1.5,
+    'url': '/assets/images/image1.jpg',
+    'items': {
+        'naan': 45,
+        'dosa': 30,
+        'chappati': 67,
+        'idly': 30
+    },
+    'location': 'chennai',
+    'Address': '25,Yellow Road, Chennai'
+}, {
+    'Cuisine': 'Italian',
+    'Name': 'Indira Canteens',
+    'Rating': 4,
+    'url': '/assets/images/image5.jpg',
+    'items': {
+        'naan': 30,
+        'chappati': 100,
+        'idly': 100,
+        'pizza': 67
+    },
+    'location': 'chennai',
+    'Address': '18, New Road,Chennai'
+}, {
+    'Cuisine': 'Indian',
+    'Name': 'KaatiZone',
+    'Rating': 3,
+    'url': '/assets/images/image5.jpg',
+    'items': {
+        'burger': 90,
+        'dosa': 100,
+        'biriyani': 100,
+        'pizza': 90
+    },
+    'location': 'chennai',
+    'Address': '5, Mahatma Gandhi Road,Chennai'
+}, {
+    'Cuisine': 'Indian',
+    'Name': 'The Kitchen of Joy',
+    'Rating': 4.7,
+    'url': '/assets/images/image4.jpg',
+    'items': {
+        'naan': 100,
+        'dosa': 90,
+        'chappati': 100,
+        'pizza': 45
+    },
+    'location': 'chennai',
+    'Address': '18, New Road,Chennai'
+}, {
+    'Cuisine': 'Italian',
+    'Name': 'Koshys',
+    'Rating': 3,
+    'url': '/assets/images/image4.jpg',
+    'items': {
+        'burger': 67,
+        'naan': 90,
+        'chappati': 88,
+        'biriyani': 100
+    },
+    'location': 'chennai',
+    'Address': '25,Yellow Road, Chennai'
+}, {
+    'Cuisine': 'Italian',
+    'Name': 'Mavalli Tiffin Room',
+    'Rating': 3.2,
+    'url': '/assets/images/image1.jpg',
+    'items': {
+        'chappati': 100,
+        'biriyani': 30,
+        'idly': 25,
+        'pizza': 100
+    },
+    'location': 'chennai',
+    'Address': '18, New Road,Chennai'
+}, {
+    'Cuisine': 'Indian',
+    'Name': 'Raj Bhavan',
+    'Rating': 2.7,
+    'url': '/assets/images/image2.jpg',
+    'items': {
+        'burger': 100,
+        'biriyani': 100,
+        'idly': 30,
+        'pizza': 25
+    },
+    'location': 'chennai',
+    'Address': '5, Mahatma Gandhi Road,Chennai'
+}]

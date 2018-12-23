@@ -1,2 +1,2 @@
-angular.module('app', ['header', 'home', 'search' , 'modal' ,'orders' ,'ngRoute'])
+angular.module('app', ['home', 'search' , 'modal' ,'orders' ,'ngRoute'])
    

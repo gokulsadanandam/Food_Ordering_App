@@ -4,15 +4,15 @@ angular.module('app')
             .when('/', {
                 templateUrl: '/components/home/home.html',
                 controller: 'home',
-                resolve : {
-                    hotels : function(hoteldata){
-                		return hoteldata.getRawData()
-                	}
-                }
             })
-             .when('/search', {
+            .when('/search', {
                 templateUrl: '/components/search/search.html',
-                controller: 'search'
+                controller: 'search',
+                resolve : {
+                    details : function(hoteldata){
+                        return hoteldata.getRawData()
+                    }
+                }
             })
              .when('/orders', {
                 templateUrl: '/components/orders/orders.html',
