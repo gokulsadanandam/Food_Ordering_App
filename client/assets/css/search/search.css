@@ -80,3 +80,20 @@
 .search-content-data > div > .btn{
 padding: 3px!important;
 }
+
+@media only screen and (max-width: 600px) {
+.search-content-image{
+		display: none
+}
+.search-header > select{
+	width: 45%;
+}
+.search-content-data > h3{
+	font-size: 16px!important;
+	margin:5px!important;
+}
+.search-content{
+	justify-content: center;
+	padding: 2px;	
+}
+}

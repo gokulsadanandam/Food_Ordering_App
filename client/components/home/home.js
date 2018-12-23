@@ -3,9 +3,8 @@
  *
  * Description
  */
-angular.module('home', ['slickCarousel','ngAnimate', 'ui.bootstrap'])
+angular.module('home', ['slickCarousel', 'ngAnimate', 'ui.bootstrap'])
     .service('data', function() {
-
         this.images = [{
             'Cuisine': 'Continental',
             'Name': 'Chai Kings',
@@ -21,7 +20,7 @@ angular.module('home', ['slickCarousel','ngAnimate', 'ui.bootstrap'])
             'Address': '18, New Road,Chennai'
         }, {
             'Cuisine': 'American',
-            'Name': 'Sangeetha Restaurant',
+            'Name': 'Sangeetha',
             'Rating': 4.7,
             'url': '/assets/images/image1.jpg',
             'items': {
@@ -73,22 +72,47 @@ angular.module('home', ['slickCarousel','ngAnimate', 'ui.bootstrap'])
             'Address': '5, Mahatma Gandhi Road,Chennai'
         }]
 
+        this.breakpoints = [{
+            'breakpoint': 1025,
+            'settings': {
+                'slidesToShow': 4,
+                'slidesToScroll': 1
+            }
+        }, {
+            'breakpoint': 1000,
+            'settings': {
+                'slidesToShow': 3,
+                'slidesToScroll': 1
+            }
+        }, {
+            'breakpoint': 480,
+            'settings': {
+                'slidesToShow': 1,
+                'slidesToScroll': 1
+            }
+        }]
+
 
         this.getImages = function() {
             return this.images
         }
 
+        this.getBreakPoints = function(){
+            return this.breakpoints
+        }
+
 
     })
-    .controller('home', function($scope, data , $uibModal) {
+    .controller('home', function($scope, data, $uibModal) {
         $scope.images = data.getImages()
+        $scope.breakpoints = data.getBreakPoints()
 
-         $scope.open = function(data) {
+        $scope.open = function(data) {
             var modalInstance = $uibModal.open({
                 animation: true,
                 templateUrl: '/components/modal/modal.html',
                 controller: 'modal',
-                size : 'md',
+                size: 'md',
                 resolve: {
                     data: function() {
                         return data;
@@ -99,8 +123,6 @@ angular.module('home', ['slickCarousel','ngAnimate', 'ui.bootstrap'])
             modalInstance.result.then(function() {
                 alert("Your Order is Being Processed!");
             });
-
-
 
         }
 

@@ -5,11 +5,6 @@ html,body{
 	font-family: 'Roboto', sans-serif;
 }
 
-header{
-	height: 8%
-}
-
 section{
-	height: 92%;
 	padding: 10px;
 }

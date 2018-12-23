@@ -14,4 +14,8 @@ angular.module('app')
                 templateUrl: '/components/search/search.html',
                 controller: 'search'
             })
+             .when('/orders', {
+                templateUrl: '/components/orders/orders.html',
+                controller: 'orders'
+            })
     })

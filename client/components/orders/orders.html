@@ -1,0 +1,47 @@
+<div class="orders-wrapper">
+	<div class="order-list" ng-show="!orders.length">
+			<h2>Your Order List is Empty</h2>
+			<img src="/assets/images/cart.png">
+	</div>
+	<div class="order-list" ng-show="orders.length">
+		<table class="table table-bordered table-responsive">
+			<thead>
+				<tr>
+					<th>Order ID</th>
+					<th>Restaurant</th>
+					<th>Order Summary</th>
+					<th>Total Cost</th>
+					<th>Order Status</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="(key,items) in itemsinpage[currentpage]"  rowspan="items.summary.length">
+					<td>{{currentpage*number + $index+1}}</td>
+					<td>{{items.name}}</td>
+					<td>
+						<table class="table">
+							<tr ng-repeat="item in items.summary">
+									<th>{{item[0]}}</th>
+									<td>{{item[1]}}</td>
+									<td>*</td>
+									<td>{{item[2]}}</td>
+							</tr>
+						</table>
+					</td>
+					<td>{{items.cost}}</td>
+					<td><b>{{items.status}}</b></td>
+				</tr>
+			</tbody>
+			
+		</table>
+	 <div class="table-bottom">
+            <div class="page-display">
+                <button ng-disabled='currentpage==0' class="btn" ng-click="updatepage(currentpage - 1)">
+                    <</button> 
+                <input type="text" class="form-control" disabled value="{{currentpage+1 + '/' + itemsinpage.length }}">
+                        <button ng-disabled='currentpage==itemsinpage.length-1' class="btn" ng-click="updatepage(currentpage + 1)">></button>
+            </div>
+        </div> 
+
+	</div>
+</div>

@@ -47,3 +47,19 @@ text-align: center;
 .hide{
 	display: none;
 }
+
+@media only screen and (max-width: 480px) {
+.btn{
+	padding: 0px 6px;
+}
+.menu > span{
+	font-style: 12px;
+}
+.modal-data-items  > input{
+width: 20%;
+} 
+.modal-image {
+	display: none
+}
+
+}

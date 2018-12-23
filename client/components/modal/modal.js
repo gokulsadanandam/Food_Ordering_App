@@ -28,10 +28,11 @@ angular.module('modal', ['ngAnimate', 'ui.bootstrap'])
 				order.name = data.Name
 				order.status = "live"
 				order.url = data.url
-				order.summary = new String()
+				order.cost = $scope.cost
+				order.summary = new Array()
 				for(items in data.items){
 					if($scope.count[items]){
-						order.summary = order.summary + items + ' ' +  data.items[items] + " * " + $scope.count[items] + " \n "
+						order.summary.push([items,data.items[items],$scope.count[items]])
 					}
 				}
 				summary.setOrderSummary(order)

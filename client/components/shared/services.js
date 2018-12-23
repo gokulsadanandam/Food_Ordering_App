@@ -10,19 +10,19 @@ angular.module('app')
         }
 
         this.userIsloggedIn = function() {
-            return  $http({
+            return $http({
                 method: 'GET',
                 url: '/api/user'
             })
         }
     })
-    .service('hoteldata', function($http,$window) {
+    .service('hoteldata', function($http, $window) {
 
         this.getHotelData = function() {
-            
-            if(this.hotelData){
-                return this.hotelData                
-            }else{
+
+            if (this.hotelData) {
+                return this.hotelData
+            } else {
                 return JSON.parse($window.localStorage.getItem('hoteldata'))
             }
 
@@ -32,8 +32,8 @@ angular.module('app')
             this.hotelData = data
         }
 
-        this.cacheData = function(data){
-            $window.localStorage.setItem('hoteldata',JSON.stringify(data))
+        this.cacheData = function(data) {
+            $window.localStorage.setItem('hoteldata', JSON.stringify(data))
             this.hotelData = data
         }
 
@@ -46,19 +46,32 @@ angular.module('app')
             })
         }
     })
-    .service('summary', function(){
-            
+    .service('summary', function($window) {
+
         this.summary = new Array()
 
-        this.setOrderSummary = function(data){
+        this.setOrderSummary = function(data) {
             this.summary.push(data)
+            if (JSON.parse($window.localStorage.getItem('summary'))) {
+                let summary = JSON.parse($window.localStorage.getItem('summary'))
+                summary.push(data)
+                $window.localStorage.setItem('summary', JSON.stringify(summary))
+            } else {
+                $window.localStorage.setItem('summary', JSON.stringify(this.summary))
+            }
         }
 
-        this.getOrderSummary = function(){
-            return this.summary
-        }   
+        this.getOrderSummary = function() {
+            if(JSON.parse($window.localStorage.getItem('summary'))!=null){
+                if (this.summary.length > JSON.parse($window.localStorage.getItem('summary')).length ) {
+                    return this.summary
+                }else{
+                    return JSON.parse($window.localStorage.getItem('summary'))
+                }
+            } else {
+                    return this.summary
+            }
+
+        }
 
     })
-
-
-

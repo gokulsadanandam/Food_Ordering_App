@@ -29,3 +29,11 @@
 	color: white
 }
 
+@media only screen and (max-width: 600px) {
+.header-wrapper > .header-items,.header-logo span{
+	font-size: 14px;
+}
+}
+
+
+
