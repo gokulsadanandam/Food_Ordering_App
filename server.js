@@ -18,10 +18,6 @@ app.get('/',(req,res)=>{
 	res.sendFile(__dirname + "/client/index.html")
 })
 
-app.get('/api/user',(req,res)=>{
-	res.send("adsfas")
-})
-
 app.get('/api/data',(req,res)=>{
 	data.find({},(err,docs)=>{
 		res.json(docs)
