@@ -7,3 +7,4 @@
 
 3) node server - to start the server. Server listens on port 3000. Ensure that your MongoDB Service is running in the 	   background.
 
+Live Deployment at https://food-ordering-application.herokuapp.com
