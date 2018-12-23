@@ -121,7 +121,7 @@ angular.module('home', ['slickCarousel', 'ngAnimate', 'ui.bootstrap'])
             });
 
             modalInstance.result.then(function() {
-                alert("Your Order is Being Processed!");
+                bootbox.alert("Your Order is Being Processed!");
             });
 
         }

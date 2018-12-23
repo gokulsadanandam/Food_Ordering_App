@@ -38,7 +38,7 @@ angular.module('modal', ['ngAnimate', 'ui.bootstrap'])
 				summary.setOrderSummary(order)
 			 	$uibModalInstance.close();
 			}else{
-				alert('Select a Item')
+                bootbox.alert("Select a Item");
 			}
 		}
 

@@ -37,7 +37,6 @@ angular.module('search', ['ngAnimate', 'ui.bootstrap'])
             $scope.searchdata = $filter('sort')($scope.searchdata, $scope.option)
         }
 
-
         $scope.search = function() {
             $scope.searchdata = []
             if ($scope.query.length > 2) {
@@ -71,13 +70,7 @@ angular.module('search', ['ngAnimate', 'ui.bootstrap'])
             });
 
             modalInstance.result.then(function() {
-                alert("Your Order is Being Processed!");
+                bootbox.alert("Your Order is Being Processed!");
             });
-
-
-
         }
-
-
-
     })
