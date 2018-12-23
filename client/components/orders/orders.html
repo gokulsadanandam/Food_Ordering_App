@@ -8,6 +8,7 @@
 			<thead>
 				<tr>
 					<th>Order ID</th>
+					<th>Order Time</th>
 					<th>Restaurant</th>
 					<th>Order Summary</th>
 					<th>Total Cost</th>
@@ -17,6 +18,7 @@
 			<tbody>
 				<tr ng-repeat="(key,items) in itemsinpage[currentpage]"  rowspan="items.summary.length">
 					<td>{{currentpage*number + $index+1}}</td>
+					<td>{{items.time}}</td>
 					<td>{{items.name}}</td>
 					<td>
 						<table class="table">

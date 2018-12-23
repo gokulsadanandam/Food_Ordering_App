@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html ng-app="app">
+
 <head>
-	<title>FoodOrderingApp</title>
-	
-	<!-- CSS LIBRARIES -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <title>Food Ordering App</title>
+
+    <!-- CSS LIBRARIES -->
+    <link rel="stylesheet" href="/assets/css/frameworks/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/frameworks/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 
-	<!-- EXTERNAL JS LIBRARIES -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.9/angular.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-touch.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+    <!-- EXTERNAL JS LIBRARIES -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/angular.min.js"></script>
+    <script src="/assets/js/angular-route.min.js"></script>
+    <script src="/assets/js/angular-animate.js"></script>
+    <script src="/assets/js/angular-touch.js"></script>
+    <script src="/assets/js/ui-bootstrap-tpls.min.js"></script>
+    <script src="/assets/js/slick.min.js"></script>
     <script src="/assets/js/angular-slick.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+    <script src="/assets/js/bootbox.min.js"></script>
 
-	<!-- FONT LIBRARIES -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- FONT LIBRARIES -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<!-- CUSTOM CSS -->
-	<link rel="stylesheet" href="/assets/css/index.css">
-	<link rel="stylesheet" href="/assets/css/header/header.css">
-	<link rel="stylesheet" href="/assets/css/home/home.css">
-	<link rel="stylesheet" href="/assets/css/search/search.css">
-	<link rel="stylesheet" href="/assets/css/modal/modal.css">
-	<link rel="stylesheet" href="/assets/css/orders/orders.css">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/header/header.css">
+    <link rel="stylesheet" href="/assets/css/home/home.css">
+    <link rel="stylesheet" href="/assets/css/search/search.css">
+    <link rel="stylesheet" href="/assets/css/modal/modal.css">
+    <link rel="stylesheet" href="/assets/css/orders/orders.css">
 
-	<!-- CUSTOM JS -->
-	<script src="/app.module.js"></script>
-	<script src="/app.routes.js"></script>
-	<script src="/components/shared/services.js"></script>
-	<script src="/components/home/home.js"></script>
-	<script src="/components/search/search.js"></script>
-	<script src="/components/orders/orders.js"></script>
-	<script src="/components/modal/modal.js"></script>
-
+    <!-- CUSTOM JS -->
+    <script src="/app.module.js"></script>
+    <script src="/app.routes.js"></script>
+    <script src="/components/shared/services.js"></script>
+    <script src="/components/home/home.js"></script>
+    <script src="/components/search/search.js"></script>
+    <script src="/components/orders/orders.js"></script>
+    <script src="/components/modal/modal.js"></script>
 </head>
 
 <body>
-<header ng-include="'/components/header/header.html'"></header>
-<section ng-view></section>
-
+    <header ng-include="'/components/header/header.html'"></header>
+    <section ng-view></section>
 </body>
+
 </html>

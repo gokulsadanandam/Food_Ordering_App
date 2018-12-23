@@ -29,6 +29,8 @@ angular.module('modal', ['ngAnimate', 'ui.bootstrap'])
 				order.status = "live"
 				order.url = data.url
 				order.cost = $scope.cost
+				let time = new Date()
+				order.time = time.toLocaleString().toString().split(",")[0]  + time.toLocaleString().toString().split(",")[1]
 				order.summary = new Array()
 				for(items in data.items){
 					if($scope.count[items]){

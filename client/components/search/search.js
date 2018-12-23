@@ -70,7 +70,7 @@ angular.module('search', ['ngAnimate', 'ui.bootstrap'])
             });
 
             modalInstance.result.then(function() {
-                bootbox.alert("Your Order is Being Processed!");
+                bootbox.alert("Your Order is Being Processed! Your Order will be Delivered in " + parseInt(Math.random()*40).toString() + " minutes");
             });
         }
     })
