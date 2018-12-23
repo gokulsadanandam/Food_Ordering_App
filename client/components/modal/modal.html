@@ -1,0 +1,21 @@
+<div class="modal-wrapper">
+	<div class="modal-image">
+		<img ng-src="{{modaldata.url}}">
+	</div>
+	<div class="modal-data">
+		<h2>{{modaldata.Name}}</h2>
+		<div class="modal-data-items" ng-repeat="(key, value) in modaldata.items">
+				<div class="menu">
+					<span>{{key}}({{value}})</span>
+				</div>
+				<div class="btn btn-danger" ng-click="remove(this)">-</div>
+				<input class="form-control" type="text" disabled value="{{count[key] || 0}}">
+				<div  class="btn btn-danger" ng-click="add(this)">+</div>
+		</div>
+	 	<h2 ng-show="cost">Total Cost {{cost}}</h2>	
+	</div>
+</div>
+	 <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="order(this.modaldata)">Order</button>
+	 		
+     </div>

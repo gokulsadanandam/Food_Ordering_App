@@ -1,9 +1,11 @@
 import random
 
-restaurants = ['Adyar Ananda Bhavan','Annalakshmi','The Grand Sweets and Snacks','Murugan Idli Shop',
-'Namma Veedu Vasanta Bhavan','New Woodlands Hotel','Ratna Cafe','Saravana Bhavan','Sri Krishna Sweets',
-'Bangalore Restaurant Week','Central Tiffin Room Bangalore','Indira Canteens','KaatiZone','The Kitchen of Joy','Koshys',
-'Mavalli Tiffin Room','Raj Bhavan','Vidyarthi Bhavan']
+# restaurants = ['Adyar Ananda Bhavan','Annalakshmi','The Grand Sweets and Snacks','Murugan Idli Shop',
+# 'Namma Veedu Vasanta Bhavan','New Woodlands Hotel','Ratna Cafe','Saravana Bhavan','Sri Krishna Sweets',
+# 'Bangalore Restaurant Week','Central Tiffin Room Bangalore','Indira Canteens','KaatiZone','The Kitchen of Joy','Koshys',
+# 'Mavalli Tiffin Room','Raj Bhavan','Vidyarthi Bhavan']
+
+restaurants = ['Chai Kings','Sangeetha Restaurant','Saravana Bhavan','Dine In','Eat Out','Family Diner']
 
 cuisine = ['Italian','Indian','American','Continental','Beverages']
 
@@ -21,7 +23,7 @@ data = {}
 op = []
 data1 ={}
 
-for i in range(1,200):
+for i in range(1,len(restaurants)):
 
 	cu_index = random.randrange(1,1000)%(len(cuisine))
 	ad_index = random.randrange(1,1000)%(len(Address))

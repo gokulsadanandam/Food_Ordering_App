@@ -46,3 +46,19 @@ angular.module('app')
             })
         }
     })
+    .service('summary', function(){
+            
+        this.summary = new Array()
+
+        this.setOrderSummary = function(data){
+            this.summary.push(data)
+        }
+
+        this.getOrderSummary = function(){
+            return this.summary
+        }   
+
+    })
+
+
+

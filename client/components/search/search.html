@@ -4,7 +4,7 @@
     <i class="fa fa-search"></i>
 </div>
 
-<div class="search-fail" ng-show="!searchdata.length&&query.length>3">
+<div class="search-fail" ng-show="!searchdata.length&&query.length>2">
 <h2>Sorry, We Could not find your Search :(</h2>
 </div>
 
@@ -28,6 +28,9 @@
 			{{results.Rating}}
 		</div>
 		<div>{{results.Address}}</div>
+		<div>
+			<button class="btn btn-danger" ng-click="open(this.results)">Order Now</button>
+		</div>
 	</div>
 
 </div>
