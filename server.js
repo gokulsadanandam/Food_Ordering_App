@@ -4,7 +4,8 @@ var express = require('express'),
 	mongoose = require('mongoose');
 
 
-mongoose.connect('mongodb://localhost:27017/FoodOrderApp')
+// mongoose.connect('mongodb://localhost:27017/FoodOrderApp')
+mongoose.connect('mongodb://gokul:gokul@24@ds125372.mlab.com:25372/foodorderingapp')
 
 var schema = new mongoose.Schema({
 	"name":String
