@@ -1,7 +1,8 @@
 #Readme.txt
 
-1) Import the Mock Data from the data.json File into MongoDB. You can use the command below to do the import.
+1) To run Locally, Import the Mock Data from the data.json File into MongoDB. You can use the command below to do the import.
 	-> mongoimport --db FoodOrderApp --collection hotels --file data.json --jsonArray
+   Also, connect to your local mongo database.
 
 2) npm install - to install node module dependencies.
 
